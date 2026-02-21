@@ -29,7 +29,6 @@ import re
 import sys
 import os
 import winreg
-import threading
 import pythoncom
 from enum import Enum
 from PIL import Image
@@ -201,7 +200,7 @@ class Presence:
             return None
 
     @staticmethod
-    def discord_available() -> bool:
+    def discord_available() -> None:
         while True:
             if Presence.is_discord_running():
                 Presence.rpc = Presence.connect_rpc()
@@ -278,10 +277,12 @@ class Presence:
                         trackTime = currentTime
                         start_time = currentTime - int(ongoing_track['start-time'].total_seconds())
                         end_time = start_time + ongoing_track['durationSec']
+                        namef = f"{ongoing_track['artist']} - {ongoing_track['title']}"
                         presence_args = {
-                            'activity_type': activityType_config.value,
+                            'activity_type': activityType_config,
                             'details': ongoing_track['title'],
                             'state': ongoing_track['artist'],
+                            'name': namef,
                             'start': start_time,
                             'end': end_time,
                             'large_image': ongoing_track['og-image'],
@@ -311,9 +312,10 @@ class Presence:
                         log(f"Track {ongoing_track['label']} on pause", LogType.Update_Status)
                         if ongoing_track['success']:
                             presence_args = {
-                                'activity_type': activityType_config.value,
+                                'activity_type': activityType_config,
                                 'details': ongoing_track['title'],
                                 'state': ongoing_track['artist'],
+                                'name': namef,
                                 'large_image': ongoing_track['og-image'],
                                 'large_text': ongoing_track['album'],
                                 'small_image': "https://raw.githubusercontent.com/FozerG/WinYandexMusicRPC/main/assets/Paused.png",
