@@ -1,5 +1,7 @@
 # **<img src="./assets/YMRPC_ico.ico" alt="[DISCORD RPC]" width="30"/> &nbsp;Fork of [WinYandexMusicRPC](https://github.com/FozerG/WinYandexMusicRPC)**
 
+[![TotalDownloads](https://img.shields.io/github/downloads/tired272/WinYandexMusicRPC/total)](https://github.com/tired272/WinYandexMusicRPC/releases "Download") [![LastRelease](https://img.shields.io/github/v/release/tired272/WinYandexMusicRPC)](https://github.com/tired272/WinYandexMusicRPC/release)
+
 **Discord RPC для показа музыки которую вы сейчас слушаете на компьютере. Загрузка треков и их обложек происходит из Яндекс Музыки.**
 
 <img width="287" height="125" alt="image" src="https://github.com/user-attachments/assets/6b873398-af5a-41ad-bb51-2c1de1d28029" />
