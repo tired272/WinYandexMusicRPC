@@ -277,7 +277,7 @@ class Presence:
                         trackTime = currentTime
                         start_time = currentTime - int(ongoing_track['start-time'].total_seconds())
                         end_time = start_time + ongoing_track['durationSec']
-                        namef = f"{ongoing_track['artist']} - {ongoing_track['title']}"
+                        namef = f"{ongoing_track['artist'].split(',')[0]} - {ongoing_track['title']}"
                         presence_args = {
                             'activity_type': activityType_config,
                             'details': ongoing_track['title'],
@@ -285,7 +285,7 @@ class Presence:
                             'name': namef,
                             'start': start_time,
                             'end': end_time,
-                            'large_image': ongoing_track['og-image'],
+                            'large_image': ongoing_track['og-image']
                         }
 
                         if ongoing_track['album'] != ongoing_track['title']:
@@ -295,7 +295,6 @@ class Presence:
                             presence_args['buttons'] = build_buttons(ongoing_track['link'])
 
                         if activityType_config == ActivityTypeConfig.LISTENING:
-                            presence_args['small_image'] = "https://raw.githubusercontent.com/FozerG/WinYandexMusicRPC/main/assets/Playing.png"
                             presence_args['small_text'] = "Playing" if language_config == LanguageConfig.ENGLISH else "Проигрывается"
 
 
@@ -318,7 +317,6 @@ class Presence:
                                 'name': namef,
                                 'large_image': ongoing_track['og-image'],
                                 'large_text': ongoing_track['album'],
-                                'small_image': "https://raw.githubusercontent.com/FozerG/WinYandexMusicRPC/main/assets/Paused.png",
                                 'small_text': "On pause" if language_config == LanguageConfig.ENGLISH else "На паузе"
                             }
                             if button_config != ButtonConfig.NEITHER:
