@@ -33,7 +33,7 @@
 1. Python <3.14, >=3.10
 
 ## Как скачать и использовать Exe?
-1. Скачиваем [последний доступный релиз](https://github.com/FozerG/WinYandexMusicRPC/releases)
+1. Скачиваем [последний доступный релиз](https://github.com/tired272/WinYandexMusicRPC/releases)
   
 2. Открываем WinYandexMusicRPC
 
