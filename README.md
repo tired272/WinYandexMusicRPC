@@ -1,13 +1,11 @@
 # **<img src="./assets/YMRPC_ico.ico" alt="[DISCORD RPC]" width="30"/> &nbsp;WinSdk + Yandex Music Discord Rich Presence**
-[![TotalDownloads](https://img.shields.io/github/downloads/FozerG/WinYandexMusicRPC/total)](https://github.com/FozerG/WinYandexMusicRPC/releases "Download") [![LastRelease](https://img.shields.io/github/v/release/FozerG/WinYandexMusicRPC)](https://github.com/FozerG/WinYandexMusicRPC/releases "Download") [![CodeOpen](https://img.shields.io/github/languages/top/FozerG/WinYandexMusicRPC)](https://github.com/FozerG/WinYandexMusicRPC/blob/main/main.py "Show code") [![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://github.com/FozerG/WinYandexMusicRPC/releases "Download")
+[![TotalDownloads](https://img.shields.io/github/downloads/tired272/WinYandexMusicRPC/total)](https://github.com/tired272/WinYandexMusicRPC/releases "Download") [![LastRelease](https://img.shields.io/github/v/release/tired272/WinYandexMusicRPC)](https://github.com/tired272/WinYandexMusicRPC/releases "Download") [![CodeOpen](https://img.shields.io/github/languages/top/tired272/WinYandexMusicRPC)](https://github.com/tired272/WinYandexMusicRPC/blob/main/main.py "Show code") [![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://github.com/tired272/WinYandexMusicRPC/releases "Download")
 
 >Несмотря на неразумное решение о блокировке Discord в РФ, я продолжу поддерживать скрипт в рабочем состоянии, насколько это будет возможно 🕊️
 
 >[Мы будем пользоваться тем, что нам нравится.](https://github.com/Flowseal/zapret-discord-youtube)
 
-**Этот вариант скрипта не устарел, но возможно вы захотите использовать [эту версию](https://github.com/FozerG/YandexMusicRPC). Она работает через сервера Яндекса, и показывает треки даже с других устройств таких как Mac, iPhone или Android.**
-
-⚠️ **16.12.2025:** Если вы используете приложение «Яндекс Музыка», отключите в настройках опцию **«Плавные переходы между треками»**. В текущей версии эта функция нарушает работу `Media.Control` и скрипта.
+**Этот вариант скрипта не устарел, но возможно вы захотите использовать [эту версию](https://github.com/tired272/YandexMusicRPC). Она работает через сервера Яндекса, и показывает треки даже с других устройств.**
 
 **Discord RPC для показа музыки которую вы сейчас слушаете на компьютере. Загрузка треков и их обложка происходит из Яндекс Музыки.**
 
@@ -53,7 +51,7 @@
 
 ## Баги
 Баги всегда существуют, но сначала их надо найти 🫡  
-Если вы нашли ошибку, то не стесняйтесь сообщать о ней в [Issues](https://github.com/FozerG/WinYandexMusicRPC/issues)
+Если вы нашли ошибку, то не стесняйтесь сообщать о ней в [Issues](https://github.com/tired272/WinYandexMusicRPC/issues)
    
 ------------
 Пожалуйста, покажите вашу заинтересованность в этом проекте, что бы я мог его обновлять по мере возможности.
